@@ -1,0 +1,5 @@
+.env
+BookmyShow_RealTime_Streaming_Project/
+*.zip
+*.pdf
+venv/

@@ -1,0 +1,23 @@
+Project : BookMyShow Real-Time Data Processing Pipeline (Industrial Project)
+
+Tech Stack: Python, Azure Event Hub, Azure Stream Analytics, SQL, Azure Synapse Analytics, n8n, Agentic AI, LLM (OpenAI), JavaScript
+
+→ Event Streaming Setup: Mock Booking and Payment data continuously published to Azure Event Hubs, simulating real-time event streams from multiple transactional sources.
+
+→ Stream Analytics Job Configuration: Defined input, output, and JavaScript-based UDFs within Azure Stream Analytics for real-time data cleaning, validation, and type normalization.
+
+→ Real-Time Data Processing: Stream Analytics performs window-based joins (tumbling & sliding windows) between Booking and Payment events to correlate transactions in motion, writing the enriched dataset directly to Synapse tables in real time.
+
+→ AI-Powered BI Agent (n8n + OpenAI):
+
+• Query aggregated business metrics dynamically from Synapse (revenue, conversion rates, top-performing cities, etc.)
+
+• Apply custom JavaScript functions for KPI calculation and time-window analysis (e.g., last 7 days)
+
+• Pass computed metrics to OpenAI Chat Model within n8n
+
+• Provide custom user and system prompts to the Chat Model for generating a professional, insight-driven business summary email for CXOs
+
+• Send final AI-generated HTML emails automatically through Outlook integration
+
+→ Outcome: A fully automated, real-time event-driven analytics pipeline that blends streaming data processing with Agentic AI automation, delivering weekly leadership insights without manual reporting.
